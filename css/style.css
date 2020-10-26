@@ -1,0 +1,47 @@
+body {
+    box-sizing: border-box;
+}
+
+section {
+    width: 96%;
+    display: grid;
+}
+
+section.firstGroup {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 17px;
+    margin: 1.5vw;
+}
+
+section.secondGroup {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 17px;
+    margin: 1.5vw;
+}
+
+section.thirdGroup {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template rows: 1fr 1fr;
+    position: relative;
+}
+
+.bigPicture {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+div.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    background-color: rgba(0,0,0,0.4);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
